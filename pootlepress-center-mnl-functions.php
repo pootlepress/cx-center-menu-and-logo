@@ -33,11 +33,14 @@ if (!function_exists('check_main_heading')) {
 	function center_nav_css() { ?>
 
 		<style>
-			#navigation { position: relative; }
-			#main-nav { position: relative; left: 50%; text-align: center; }
-			#main-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
-				position: relative; right: 50%; }
-			#main-nav.nav li ul li { left: 0; }
+			/*Not mobile*/
+			@media only screen and (min-width: 768px) {
+				#navigation { position: relative; }
+				#main-nav { position: relative; left: 50%; text-align: center; }
+				#main-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
+					position: relative; right: 50%; }
+				#main-nav.nav li ul li { left: 0; }
+			}
  
 		</style>
 
@@ -49,11 +52,13 @@ if (!function_exists('check_main_heading')) {
 	function center_topmenu_css() { ?>
 
 		<style>
-			#top-nav { position: relative; left: 50%; text-align: center; }
-			#top-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
-				position: relative; right: 50%; }
-			#top-nav.nav li ul li { left: 0; }
-
+			/*Not mobile*/
+			@media only screen and (min-width: 768px) {
+				#top-nav { position: relative; left: 50%; text-align: center; }
+				#top-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
+					position: relative; right: 50%; }
+				#top-nav.nav li ul li { left: 0; }
+			}
 
  
 		</style>
