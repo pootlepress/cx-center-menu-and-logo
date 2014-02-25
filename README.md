@@ -9,6 +9,7 @@ Instructions:
 2. Centering of logo, primary navigation, and top menu navigation will be turned on automatically. You can view and adjust the options under 'Canvas Extensions' in the Canvas Theme Options. 
 
 Versions:
+	v1.0.0 	- 24-Feb-2014 - testing complete
 	v0.4.0 	- 23-Feb-2014
 			- do not center menus when rendering on handheld device
 	v0.3.0 	- 21-Feb-2014

@@ -159,18 +159,19 @@ class Pootlepress_Center_Menu_N_Logo {
 				
 		if ($_center_logo_enabled == 'true') {
 			add_action('wp_head', 'center_logo_css');
-			// add_action('wp_footer', 'stickyjs', 8);
-			// add_action('woo_nav_before', 'navBefore');
 		}
 		if ($_center_pri_nav_enabled == 'true') {
 			add_action('wp_head', 'center_nav_css');
-		}
-		if ($_center_top_menu_enabled == 'true') {
-			add_action('wp_head', 'center_topmenu_css');
-		}
-	} // End load_center_mnl()
-	
 
+		}
+
+		if ($_center_top_menu_enabled == 'true') {
+
+			add_action('wp_head', 'center_topmenu_css');
+
+		}
+
+	} // End load_center_mnl()
 } // End Class
 
 

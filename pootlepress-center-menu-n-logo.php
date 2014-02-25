@@ -3,7 +3,7 @@
 Plugin Name: Canvas Extension - Center Menu & Logo
 Plugin URI: http://pootlepress.com/canvas-extensions
 Description: An extension for WooThemes Canvas that offers the option to align the logo in the middle of the header, center the primary navigation, and center the top menu.
-Version: 0.2.0
+Version: 1.0.0
 Author: PootlePress
 Author URI: http://pootlepress.com/
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -26,5 +26,5 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
 	require_once( 'pootlepress-center-mnl-functions.php' );
 	require_once( 'classes/class-center-menu-n-logo.php' );
     $GLOBALS['pootlepress_center_mnl'] = new Pootlepress_Center_Menu_N_Logo( __FILE__ );
-    $GLOBALS['pootlepress_center_mnl']->version = '0.2.0';
+    $GLOBALS['pootlepress_center_mnl']->version = '1.0.0';
 ?>
