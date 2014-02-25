@@ -28,7 +28,22 @@ if (!function_exists('check_main_heading')) {
 
 	<?php
 }
-	
+
+	/* Remove Search widget from navigation menu */
+	function hide_search_widget_css() { ?>
+
+		<style>
+			/*Not mobile*/
+			@media only screen and (min-width: 768px) {
+				ul.nav-search { display:none; }
+			}
+ 
+		</style>
+
+	<?php
+}
+
+
 	/* Centre primary navigation menu */
 	function center_nav_css() { ?>
 

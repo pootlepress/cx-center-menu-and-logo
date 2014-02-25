@@ -80,6 +80,13 @@ class Pootlepress_Center_Menu_N_Logo {
 				'type' => 'checkbox'
 				);
 		$o[] = array(
+				'id' => $nameprefix."_hide-search-widget-option", 
+				'name' => __( 'Remove Search Widget', $mls_domain ), 
+				'desc' => __( 'Remove the Search widget from the navigation menu.', $mls_domain ), 
+				'std' => 'false',
+				'type' => 'checkbox'
+				);
+		$o[] = array(
 				
 				'id' => $nameprefix."_center-navigation-option",
 		 
@@ -154,11 +161,15 @@ class Pootlepress_Center_Menu_N_Logo {
 	public function load_center_mnl() {
 		$nameprefix = $this->token;
 		$_center_logo_enabled		= get_option($nameprefix."_center-logo-option");
+		$_hide_search_widget_enabled= get_option($nameprefix."_hide-search-widget-option");
 		$_center_pri_nav_enabled	= get_option($nameprefix."_center-navigation-option");
 		$_center_top_menu_enabled	= get_option($nameprefix."_center-top-menu-option");
 				
 		if ($_center_logo_enabled == 'true') {
 			add_action('wp_head', 'center_logo_css');
+		}
+		if ($_hide_search_widget_enabled == 'true') {
+			add_action('wp_head', 'hide_search_widget_css');
 		}
 		if ($_center_pri_nav_enabled == 'true') {
 			add_action('wp_head', 'center_nav_css');
