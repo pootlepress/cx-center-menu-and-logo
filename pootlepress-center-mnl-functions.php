@@ -82,5 +82,4 @@ if (!function_exists('check_main_heading')) {
 */
 
 
-
 ?>
