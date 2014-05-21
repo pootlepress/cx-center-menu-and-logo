@@ -23,7 +23,7 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
     if ( ! defined( 'ABSPATH' ) ) exit;				// Exit if accessed directly
-	require_once( 'pootlepress-center-mnl-functions.php' );
+	require_once( 'pootlepress-center-menu-n-logo-functions.php' );
 	require_once( 'classes/class-center-menu-n-logo.php' );
     $GLOBALS['pootlepress_center_mnl'] = new Pootlepress_Center_Menu_N_Logo( __FILE__ );
     $GLOBALS['pootlepress_center_mnl']->version = '1.1.0';
