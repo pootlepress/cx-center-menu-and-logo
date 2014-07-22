@@ -10,6 +10,8 @@ Instructions:
 
 Versions:
 
+	v1.2 - ability to update within WordPress
+
 	v1.1.0 	- 25-Feb-2014 - add the option to remove the search widget from the primary navigation menu
 	
 	v1.0.0 	- 24-Feb-2014 - testing complete
