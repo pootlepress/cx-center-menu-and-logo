@@ -59,6 +59,10 @@ if (!class_exists('Pootlepress_Updater')) {
          */
         public function check_update($transient)
         {
+            if (isset($transient->response[$this->plugin_slug])) {
+                return $transient;
+            }
+
             // Get the remote version
             $remote_version = $this->getRemote_version();
 
@@ -97,7 +101,7 @@ if (!class_exists('Pootlepress_Updater')) {
                 $information = $this->getRemote_information();
                 return $information;
             }
-            return false;
+            return $false;
         }
 
         /**
