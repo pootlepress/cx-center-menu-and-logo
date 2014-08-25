@@ -71,9 +71,9 @@ if(!function_exists('poo_commit_suicide')) {
 			/*Not mobile*/
 			@media only screen and (min-width: 768px) {
 				#navigation { position: relative; }
-				#main-nav { position: relative; left: 50%; text-align: center; }
-				#main-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
-					position: relative; right: 50%; }
+				#main-nav { position: relative; left: 0; text-align: center; width: 100%; }
+				#main-nav.nav li { display: inline-block; float: none; list-style: none; margin: 0; padding: 0;
+					position: relative; vertical-align: middle; }
 				#main-nav.nav li ul li { left: 0; }
 			}
  
@@ -89,9 +89,9 @@ if(!function_exists('poo_commit_suicide')) {
 		<style>
 			/*Not mobile*/
 			@media only screen and (min-width: 768px) {
-				#top-nav { position: relative; left: 50%; text-align: center; }
-				#top-nav.nav li { display: block; float: left; list-style: none; margin: 0; padding: 0;
-					position: relative; right: 50%; }
+				#top-nav { position: relative; text-align: center; left: 0; width: 100%; }
+				#top-nav.nav li { display: inline-block; float: none; list-style: none; margin: 0; padding: 0;
+					position: relative; vertical-align: middle;  }
 				#top-nav.nav li ul li { left: 0; }
 			}
 
