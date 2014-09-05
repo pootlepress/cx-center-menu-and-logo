@@ -71,7 +71,7 @@ if(!function_exists('poo_commit_suicide')) {
 			/*Not mobile*/
 			@media only screen and (min-width: 768px) {
 				#navigation { position: relative; }
-				#main-nav { position: relative; left: 0; text-align: center; width: auto; }
+				#main-nav { position: relative; left: 0; text-align: center; width: 100%; }
 				#main-nav.nav li { display: inline-block; float: none; list-style: none; margin: 0; padding: 0;
 					position: relative; vertical-align: middle; }
 				#main-nav.nav li ul li { left: 0; }
